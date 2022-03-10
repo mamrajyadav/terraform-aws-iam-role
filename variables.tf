@@ -115,3 +115,9 @@ variable "policy_arn" {
   description = "The ARN of the policy you want to apply."
   sensitive   = true
 }
+
+variable "instance_profile_enabled" {
+  type        = bool
+  default     = false
+  description = "Create EC2 Instance Profile for the role"
+}
